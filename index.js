@@ -8,14 +8,14 @@ function printBadges(names) {
     return names;
 }
 
-function tailsNeverFails() {
-  let turns = 0
-  let maybeTails = (Math.random() >= 0.5)
+function tailsNeverFails () {
+  let tails = 0;
 
-  while (maybeTails){
-    ++turns
-    console.log(`You got ${turns} tails in a row!`)
+  while (Math.random() >= 0.5) {
+    tails++;
   }
+
+  return `You got ${tails} tails in a row!`;
 }
 
 
