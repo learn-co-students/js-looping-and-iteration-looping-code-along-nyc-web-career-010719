@@ -7,11 +7,10 @@ function printBadges(array) {
   return array;
 }
 
-function tailsNeverFails() {
-  let flip = 0;
-  let tails = Math.random();
-  while (tails >= 0.5) {
-    flip++;
+function tailsNeverFails () {
+  let tails = 0;
+  while (Math.random() >= 0.5) {
+    tails++;
   }
-  console.log(`You got ${++flip} tails in a row!`)
+  return `You got ${tails} tails in a row!`;
 }
